@@ -3,10 +3,14 @@
     {{ t('settings.language.reloadPage') }}
   </p>
   <div class="mb-8 border p-4 rounded-lg dark:border-gray-800 border-gray-200">
-    <p class="font-semibold mb-2 capitalize">Automa</p>
+    <p class="font-semibold mb-2 capitalize">
+      {{ t('common.appName') }}
+    </p>
     <ui-list>
       <ui-list-item class="group">
-        <p class="flex-1">Shortcut</p>
+        <p class="flex-1">
+          {{ t(`workflow.settings.shortcut.item.shortcut`) }}
+        </p>
         <template v-if="recording.id === 'automa:shortcut'">
           <kbd v-for="key in recording.keys" :key="key">
             {{ getReadableShortcut(key) }}
@@ -52,7 +56,9 @@
     :key="category"
     class="mb-8 border p-4 rounded-lg dark:border-gray-800 border-gray-200"
   >
-    <p class="font-semibold mb-2 capitalize">{{ category }}</p>
+    <p class="font-semibold mb-2 capitalize">
+      {{ t(`workflow.settings.shortcut.category.${category}`) }}
+    </p>
     <ui-list class="space-y-1 text-gray-600 dark:text-gray-200">
       <ui-list-item
         v-for="shortcut in items"
@@ -60,7 +66,7 @@
         class="group h-12"
       >
         <p class="flex-1 mr-4 capitalize">
-          {{ shortcut.name }}
+          {{ t(`workflow.settings.shortcut.item.${shortcut.name}`) }}
         </p>
         <template v-if="recording.id === shortcut.id">
           <kbd v-for="key in recording.keys" :key="key">

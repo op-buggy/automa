@@ -7,7 +7,9 @@
         ></div>
       </slot>
       <slot v-else-if="state.error" name="error">
-        <p class="text-lighter text-center">Failed to load image</p>
+        <p class="text-lighter text-center">
+          {{ t('common.message.loadImageError') }}
+        </p>
       </slot>
       <div
         v-else
@@ -25,6 +27,7 @@
 </template>
 <script>
 import { ref, shallowReactive, onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 export default {
   props: {
@@ -41,6 +44,8 @@ export default {
   },
   emits: ['error', 'load'],
   setup(props, { emit }) {
+    // eslint-disable-next-line no-unused-vars
+    const { t } = useI18n();
     const imageContainer = ref(null);
     const state = shallowReactive({
       loading: true,

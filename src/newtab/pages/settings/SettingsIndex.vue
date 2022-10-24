@@ -20,7 +20,7 @@
           />
         </div>
         <span class="text-sm text-gray-600 dark:text-gray-200 ml-1">
-          {{ item.name }}
+          {{ t(`theme.${item.name}`) }}
         </span>
       </div>
     </div>
@@ -55,7 +55,7 @@
     </p>
   </div>
   <div id="delete-logs" class="mt-12">
-    <p class="font-semibold mb-1">Workflow Logs</p>
+    <p class="font-semibold mb-1">{{ t('settings.workflow.logs') }}</p>
     <div class="flex items-center">
       <ui-select
         :model-value="settings.deleteLogAfter"
@@ -82,7 +82,7 @@
         :model-value="settings.logsLimit"
         class="ml-4"
         type="number"
-        label="Logs limit"
+        :label="t('settings.deleteLog.logsLimit')"
         min="10"
         @change="updateSetting('logsLimit', +$event <= 0 ? 1000 : +$event)"
       />

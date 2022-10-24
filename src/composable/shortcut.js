@@ -8,6 +8,10 @@ const defaultShortcut = {
     id: 'page:dashboard',
     combo: 'option+1',
   },
+  'page:packages': {
+    id: 'page:packages',
+    combo: 'option+p',
+  },
   'page:workflows': {
     id: 'page:workflows',
     combo: 'option+w',

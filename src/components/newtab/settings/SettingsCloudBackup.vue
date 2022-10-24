@@ -9,7 +9,7 @@
       />
       <ui-list class="mt-4">
         <p class="mb-1 text-sm text-gray-600 dark:text-gray-200">
-          {{ t('settings.backupWorkflows.cloud.location') }}
+          {{ t('common.location') }}
         </p>
         <ui-list-item
           v-for="location in ['local', 'cloud']"

@@ -1,5 +1,7 @@
 {
   "common": {
+    "appName": "Automa",
+    "version": "version",
     "dashboard": "Dashboard",
     "workflow": "Workflow | Workflows",
     "collection": "Collection | Collections",
@@ -7,11 +9,15 @@
     "block": "Block | Blocks",
     "schedule": "Schedule",
     "folder": "Folder | Folders",
+    "zoom": "Zoom",
+    "minZoom": "Min Zoom",
+    "maxZoom": "Max Zoom",
     "new": "New",
     "docs": "Documentation",
     "search": "Search",
     "example": "Example | Examples",
     "import": "Import",
+    "location": "Location",
     "export": "Export",
     "rename": "Rename",
     "execute": "Execute",
@@ -55,7 +61,8 @@
     "maxSizeExceeded": "The file size is the exceeded maximum allowed",
     "notSaved": "Do you really want to leave? you have unsaved changes!",
     "somethingWrong": "Something went wrong",
-    "limitExceeded": "You have exceeded the limit"
+    "limitExceeded": "You have exceeded the limit",
+    "loadImageError": "Failed to load image"
   },
   "sort": {
     "sortBy": "Sort by",

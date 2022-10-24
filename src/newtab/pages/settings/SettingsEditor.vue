@@ -1,16 +1,16 @@
 <template>
   <div class="max-w-2xl">
-    <p class="font-semibold">Zoom</p>
+    <p class="font-semibold">{{ t('common.zoom') }}</p>
     <div class="flex items-center mt-1 space-x-4">
       <ui-input
         v-model.number="settings.minZoom"
         type="number"
-        label="Min zoom"
+        :label="t('common.minZoom')"
       />
       <ui-input
         v-model.number="settings.maxZoom"
         type="number"
-        label="Max zoom"
+        :label="t('common.maxZoom')"
       />
     </div>
     <ui-list class="mt-8 space-y-2">

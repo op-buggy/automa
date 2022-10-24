@@ -31,7 +31,7 @@
         },
         "toggle": {
           "enable": "Enable block",
-          "disable": "Disable block",
+          "disable": "Disable block"
         },
         "onError": {
           "info": "These rules will apply when an error occurs on the block",
@@ -41,7 +41,7 @@
           "fallbackTitle": "Will execute when an error occurs in the block",
           "times": {
             "name": "Times",
-            "description": "The number of times to retry the action",
+            "description": "The number of times to retry the action"
           },
           "interval": {
             "name": "Interval",
@@ -353,7 +353,7 @@
           "characterData": {
             "title": "Character data",
             "description": "Monitor changes to the character data/text within the target element"
-          },
+          }
         },
         "items": {
           "manual": "Manually",
@@ -505,7 +505,7 @@
             "data-columns": "Table",
             "google-sheets": "Google sheets",
             "variable": "Variable"
-          },
+          }
         }
       },
       "element-scroll": {

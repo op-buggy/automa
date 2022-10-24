@@ -12,7 +12,7 @@
       <div class="flex-grow" />
       <ui-button @click="scheduleState.showModal = true">
         <v-remixicon name="riAddLine" class="-ml mr-2" />
-        Schedule workflow
+        {{ t('scheduledWorkflow.title', 2) }}
       </ui-button>
     </div>
     <ui-table
@@ -178,7 +178,7 @@ const tableHeaders = [
   },
   {
     value: 'location',
-    text: 'Location',
+    text: t('common.location'),
   },
   {
     value: 'active',

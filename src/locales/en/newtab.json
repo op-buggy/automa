@@ -20,7 +20,7 @@
     },
     "categories": {
       "my": "My Packages",
-      "installed": "Installed Packages",
+      "installed": "Installed Packages"
     }
   },
   "scheduledWorkflow": {
@@ -28,7 +28,7 @@
     "nextRun": "Next run",
     "active": "Active",
     "refresh": "Refresh",
-    "schedule":{
+    "schedule": {
       "title": "Schedule",
       "types": {
         "everyDay": "Every day",
@@ -127,6 +127,7 @@
     "deleteLog": {
       "title": "Auto delete workflow logs",
       "after": "Delete after",
+      "logsLimit": "Logs Limit",
       "deleteAfter": {
         "never": "Never",
         "days": "{day} days"
@@ -136,6 +137,9 @@
       "label": "Language",
       "helpTranslate": "Can't find your language? Help translate.",
       "reloadPage": "Reload the page to take effect"
+    },
+    "workflow": {
+      "logs": "Workflow Logs"
     },
     "menu": {
       "backup": "Backup Workflows",
@@ -164,7 +168,6 @@
           "local": "Local",
           "cloud": "Cloud"
         },
-        "location": "Location",
         "delete": "Delete backup",
         "title": "Cloud Backup",
         "sync": "Sync",
@@ -234,12 +237,12 @@
       "messages": {
         "hostExist": "You already add this host",
         "notFound": "Can't find hosted workflow with \"{id}\" id"
-      },
+      }
     },
     "type": {
       "local": "Local",
       "shared": "Shared",
-      "host": "Host",
+      "host": "Host"
     },
     "unpublish": {
       "title": "Unpublish workflow",
@@ -350,6 +353,30 @@
           "restartWorkflow": "Restart workflow"
         }
       },
+      "shortcut": {
+        "category": {
+          "shortcut": "Shortcut",
+          "page": "Page",
+          "action": "Action",
+          "editor": "Editor"
+        },
+        "item": {
+          "dashboard": "dashboard",
+          "packages": "packages",
+          "workflows": "workflows",
+          "schedule": "schedule",
+          "logs": "logs",
+          "storage": "storage",
+          "settings": "settings",
+          "search": "search",
+          "new": "new",
+          "duplicate block": "Duplicate Block",
+          "search blocks": "Search Blocks",
+          "save": "save",
+          "execute workflow": "Execute Workflow",
+          "toggle sidebar": "Toggle Sidebar"
+        }
+      },
       "timeout": {
         "title": "Workflow timeout (milliseconds)"
       },
@@ -360,7 +387,7 @@
       "tabLoadTimeout": {
         "title": "Tab load timeout",
         "description": "Maximum time to load tab in milliseconds, pass 0 to disable the timeout."
-      },
+      }
     }
   },
   "collection": {

@@ -1,7 +1,7 @@
 <template>
   <div class="mt-6 pt-4 border-t">
     <div class="flex items-center text-gray-600 dark:text-gray-300">
-      <span class="flex-1"> Folders </span>
+      <span class="flex-1"> {{ t('common.folder') }} </span>
       <button
         class="dark:hover:text-gray-100 hover:text-black rounded-md transition"
         @click="newFolder"
@@ -25,7 +25,7 @@
         @click="$emit('update:modelValue', '')"
       >
         <v-remixicon name="riFolderLine" class="mr-2" />
-        <p class="flex-1 text-overflow">All</p>
+        <p class="flex-1 text-overflow">{{ t('common.all') }}</p>
       </ui-list-item>
       <ui-list-item
         v-for="folder in folders"

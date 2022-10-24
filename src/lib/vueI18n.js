@@ -48,6 +48,7 @@ export async function loadLocaleMessages(locale, location) {
   await importLocale('common.json');
   await importLocale(`${location}.json`, true);
   await importLocale('blocks.json', true);
+  await importLocale('theme.json', true);
 
   return nextTick();
 }

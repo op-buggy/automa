@@ -20,7 +20,7 @@
     },
     "categories": {
       "my": "我的包",
-      "installed": "已安装的包",
+      "installed": "已安装的包"
     }
   },
   "scheduledWorkflow": {
@@ -127,6 +127,7 @@
     "deleteLog": {
       "title": "自动删除工作流日志",
       "after": "删除间隔",
+      "logsLimit": "日志限制",
       "deleteAfter": {
         "never": "从不",
         "days": "{day} 天"
@@ -136,6 +137,9 @@
       "label": "语言",
       "helpTranslate": "找不到您的语言？ 帮助翻译.",
       "reloadPage": "重新加载页面生效"
+    },
+    "workflow": {
+      "logs": "工作流日志"
     },
     "menu": {
       "backup": "备份工作流",
@@ -339,6 +343,30 @@
           "keepRunning": "继续运行",
           "stopWorkflow": "停止工作流",
           "restartWorkflow": "重启工作流"
+        }
+      },
+      "shortcut": {
+        "category": {
+          "page": "页面",
+          "action": "动作",
+          "editor": "编辑"
+        },
+        "item": {
+          "shortcut": "快捷键",
+          "dashboard": "仪表盘",
+          "packages": "包",
+          "workflows": "工作流",
+          "schedule": "计划",
+          "logs": "日志",
+          "storage": "存储",
+          "settings": "设置",
+          "search": "搜索",
+          "new": "新建",
+          "duplicate block": "复制区块",
+          "search blocks": "搜索区块",
+          "save": "保存",
+          "execute workflow": "执行工作流",
+          "toggle sidebar": "切换侧栏"
         }
       },
       "timeout": {
